@@ -1,6 +1,8 @@
-dependencies {
-    compile project(":ftgo-common")
-    compile project(":ftgo-common-jpa")
+apply plugin: 'java-library'
 
-    testCompile "junit:junit:4.12"
+dependencies {
+    api project(":ftgo-common")
+    api project(":ftgo-common-jpa")
+
+    testImplementation "junit:junit:4.12"
 }
